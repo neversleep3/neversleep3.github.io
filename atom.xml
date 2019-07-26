@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://neversleep3.github.io/</id>
     <title>Yes</title>
-    <updated>2019-07-18T02:55:01.074Z</updated>
+    <updated>2019-07-26T01:19:20.386Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://neversleep3.github.io/"/>
     <link rel="self" href="https://neversleep3.github.io//atom.xml"/>
@@ -11,12 +11,30 @@
     <icon>https://neversleep3.github.io//favicon.ico</icon>
     <rights>All rights reserved 2019, Yes</rights>
     <entry>
-        <title type="html"><![CDATA[aa]]></title>
-        <id>https://neversleep3.github.io//post/aa</id>
-        <link href="https://neversleep3.github.io//post/aa">
+        <title type="html"><![CDATA[如何把一个字符串的大小写取反（大写变小写小写变大写），例如 ’AbC' 变成 'aBc' 。]]></title>
+        <id>https://neversleep3.github.io//post/How-to-reverse-case-for-string</id>
+        <link href="https://neversleep3.github.io//post/How-to-reverse-case-for-string">
         </link>
-        <updated>2019-07-18T02:54:37.000Z</updated>
-        <content type="html"><![CDATA[<p>sdasdas</p>
+        <updated>2019-07-26T01:14:43.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>function processString (s) {
+    var arr = s.split('');
+    var new_arr = arr.map((item) =&gt; {
+        return item === item.toUpperCase() ? item.toLowerCase() : item.toUpperCase();
+    });
+    return new_arr.join('');
+}
+console.log(processString('AbC'));    // output: 'aBc' 
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于]]></title>
+        <id>https://neversleep3.github.io//post/about</id>
+        <link href="https://neversleep3.github.io//post/about">
+        </link>
+        <updated>2019-01-25T11:09:48.000Z</updated>
+        <content type="html"><![CDATA[<p>这是关于的页面，可以在这里向世界介绍你！<br>
+Hey Its me</p>
 ]]></content>
     </entry>
     <entry>
