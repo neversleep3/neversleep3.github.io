@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | Yes</title>
+<title>Swear | Yes</title>
 <meta name="description" content="Looks So Good">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -13,6 +13,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://neversleep3.github.io//styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -91,14 +97,38 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">Swear</h2>
+            <div class="post-date">2019-10-10</div>
             
-              <a class="tag" href="https://neversleep3.github.io//tag/9fAThhizC">JavaScript</a>
+            <div class="post-content">
+              <p>Second Article😁😎😟😕</p>
+<!-- more -->
+<!-- more -->
+
+            </div>
             
-              <a class="tag" href="https://neversleep3.github.io//tag/KrEwPoQPB">Gridea</a>
             
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://neversleep3.github.io//post/How-to-reverse-case-for-string">
+                  <h3 class="post-title">
+                    如何把一个字符串的大小写取反（大写变小写小写变大写），例如 ’AbC&#39; 变成 &#39;aBc&#39; 。
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -119,6 +149,29 @@ var app = new Vue({
 })
 
 </script>
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'dc57f6009230b8bab573',
+        clientSecret: '4c56fb8a439cf3b0dc67c8b4bb62fb38dc141ce4',
+        repo: 'neversleep3.github.io',
+        owner: 'neversleep3',
+        admin: ['neversleep3'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
